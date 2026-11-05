@@ -150,7 +150,7 @@ export function drawHud(c: Ctx, debug: boolean) {
   // boss bars
   const bb = W.bossBars;
   if (bb) {
-    const w = 560, x = 480 - w / 2, y = 22;
+    const w = 380, x = 480 - w / 2 + 10, y = 22;
     text(c, bb.name, 480, y, { size: 16, align: 'center', bold: true });
     const per = bb.maxhp / 4;
     for (let i = 0; i < 4; i++) {
